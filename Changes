@@ -1,5 +1,14 @@
 Revision history for Bench-Scenario-DigestMD5
 
+0.002   2016-11-21 (PERLANCAR)
+
+	- No functional changes.
+
+	- Tweak scenario: make participant more independent by specifying
+	  the required modules (String::ShellQuote) in the participant
+	  instead of use-ing the module at the start of the module source.
+
+
 0.001   2016-11-21 (PERLANCAR)
 
         - First release.
