@@ -8,8 +8,6 @@ use strict;
 use warnings;
 use Log::Any::IfLOG '$log';
 
-use String::ShellQuote;
-
 sub _create_file {
     my ($size) = @_;
 
@@ -27,6 +25,7 @@ our $scenario = {
     participants => [
         {
             name   => 'md5sum',
+            modules => ['String::ShellQuote'],
             code_template => 'my $cmd = "md5sum ".String::ShellQuote::shell_quote(<filename>); my $res = `$cmd`; $res =~ s/\s.+//s; $res',
         },
         {
