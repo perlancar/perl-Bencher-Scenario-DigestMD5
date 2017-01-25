@@ -25,7 +25,7 @@ our $scenario = {
     participants => [
         {
             name   => 'md5sum',
-            modules => ['String::ShellQuote'],
+            helper_modules => ['String::ShellQuote'],
             code_template => 'my $cmd = "md5sum ".String::ShellQuote::shell_quote(<filename>); my $res = `$cmd`; $res =~ s/\s.+//s; $res',
         },
         {
