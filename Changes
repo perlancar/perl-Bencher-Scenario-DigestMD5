@@ -1,3 +1,13 @@
+0.003   2017-01-25 (PERLANCAR)
+
+	- Tweak scenario: move String::ShellQuote from participant's modules to
+          helper_modules.
+
+        - [build] Rebuild with updated Dist::Zilla::Plugin::Bencher::Scenario
+          (0.16) to add benchmarked modules as prereq with phase=x_benchmarks,
+          type=x_benchmarks.
+
+
 0.002   2016-11-21 (PERLANCAR)
 
 	- No functional changes.
