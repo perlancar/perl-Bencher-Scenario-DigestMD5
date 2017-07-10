@@ -6,7 +6,7 @@ package Bencher::Scenario::DigestMD5;
 use 5.010001;
 use strict;
 use warnings;
-use Log::Any::IfLOG '$log';
+use Log::ger;
 
 sub _create_file {
     my ($size) = @_;
@@ -46,9 +46,9 @@ our $scenario = {
 
         my $dss = $sc->{datasets};
         for my $ds (@$dss) {
-            $log->infof("Creating temporary file with size of %.1fMB ...", $ds->{_size}/1024/1024);
+            log_info("Creating temporary file with size of %.1fMB ...", $ds->{_size}/1024/1024);
             my $filename = _create_file($ds->{_size});
-            $log->infof("Created file %s", $filename);
+            log_info("Created file %s", $filename);
             $ds->{args}{filename} = $filename;
         }
     },
@@ -61,7 +61,7 @@ our $scenario = {
         for my $ds (@$dss) {
             my $filename = $ds->{args}{filename};
             next unless $filename;
-            $log->infof("Unlinking %s", $filename);
+            log_info("Unlinking %s", $filename);
             unlink $filename;
         }
     },
