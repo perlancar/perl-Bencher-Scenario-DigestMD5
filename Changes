@@ -1,11 +1,11 @@
-0.004   2017-07-10 (PERLANCAR)
+0.004   2017-07-10  Released-By: PERLANCAR
 
 	- No functional changes.
 
 	- Replace Log::Any with Log::ger.
 
 
-0.003   2017-01-25 (PERLANCAR)
+0.003   2017-01-25  Released-By: PERLANCAR
 
 	- Tweak scenario: move String::ShellQuote from participant's modules to
           helper_modules.
@@ -15,7 +15,7 @@
           type=x_benchmarks.
 
 
-0.002   2016-11-21 (PERLANCAR)
+0.002   2016-11-21  Released-By: PERLANCAR
 
 	- No functional changes.
 
@@ -24,6 +24,6 @@
 	  instead of use-ing the module at the start of the module source.
 
 
-0.001   2016-11-21 (PERLANCAR)
+0.001   2016-11-21  Released-By: PERLANCAR
 
         - First release.
