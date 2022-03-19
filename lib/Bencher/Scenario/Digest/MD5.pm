@@ -1,12 +1,14 @@
-package Bencher::Scenario::DigestMD5;
-
-# DATE
-# VERSION
+package Bencher::Scenario::Digest::MD5;
 
 use 5.010001;
 use strict;
 use warnings;
 use Log::ger;
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 sub _create_file {
     my ($size) = @_;
